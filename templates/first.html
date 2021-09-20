@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List of Top Players</title>
+</head>
+<body>
+	<center>
+		<h1>Top Players</h1>
+		<table border="1">
+			<tr>
+				<th>#ID</th>
+				<th>Player Name</th>
+				<th>Player Email</th>
+				<th>Country</th>
+				<th>No of Games</th>
+				<th>Total Score</th>
+			</tr>
+			{% for i in Player%}
+			<tr>
+				<td>{{i.ID}}</td>
+				<td>{{i.Player_Name}}</td>
+				<td>{{i.Player_Email}}</td>
+				<td>{{i.Country}}</td>
+				<td>{{i.No_of_Games}}</td>
+				<td>{{i.Total_Score}}</td>
+			</tr>
+			{% endfor %}
+		</table>
+	</center>
+
+</body>
+</html>
